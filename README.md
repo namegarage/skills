@@ -4,7 +4,7 @@ Public agent skills for finding domains in the [Namegarage catalog](https://name
 
 ## Catalog
 
-The catalog skill searches published domains by project description or keywords checks current USD prices, looks up details, compares payment options and suggests published alternatives. Search can filter by budget, suffix, length, and tier. No Namegarage account or API key is required.
+The catalog skill searches published domains by project description or keywords and checks current USD prices. It also looks up listing details, compares payment options and suggests published alternatives. Search can filter by budget, suffix, length, and tier. No Namegarage account or API key is required.
 
 Install the versioned release with the skills CLI:
 
