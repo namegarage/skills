@@ -4,12 +4,12 @@ Public agent skills for finding domains in the [Namegarage catalog](https://name
 
 ## Catalog
 
-The catalog skill searches published domains by project description or keywords and checks current USD prices. Search can filter by budget, suffix, length, and tier. No Namegarage account or API key is required.
+The catalog skill searches published domains by project description or keywords checks current USD prices, looks up details, compares payment options and suggests published alternatives. Search can filter by budget, suffix, length, and tier. No Namegarage account or API key is required.
 
 Install the versioned release with the skills CLI:
 
 ```bash
-npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.0.0 --skill catalog
+npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.1.0 --skill catalog
 ```
 
 Choose the agent and workspace where you want to use it. The CLI supports agents including Codex, Claude Code, Cursor, and OpenClaw.
@@ -17,7 +17,7 @@ Choose the agent and workspace where you want to use it. The CLI supports agents
 For OpenClaw, the same skill is also on [ClawHub](https://clawhub.ai/namegarage/skills/catalog):
 
 ```bash
-openclaw skills install @namegarage/catalog --version 1.0.0
+openclaw skills install @namegarage/catalog --version 1.1.0
 ```
 
 Try a prompt:
@@ -33,3 +33,15 @@ The skill uses only documented public read interfaces. It cannot buy or reserve 
 ## License
 
 MIT No Attribution (MIT-0). See [LICENSE](LICENSE).
+
+## Coordinated capabilities
+
+The catalog skill documents `search_domains`, `get_domain`, `get_purchase_options`
+and `suggest_alternatives`, and their matching public HTTP interfaces. Payment
+comparisons use server-provided monthly, final and total amounts; the skill does
+not calculate replacement prices, start checkout or reserve a name.
+
+[Developer changelog](https://namegarage.com/developers/changelog/) records the API,
+MCP, SDK and skill versions under one release ID. The root `release.json` records
+this artifact's compatibility and SHA-256. Run `python3 tools/check_release.py`
+before release, plus the central cross-repository check from nikolay/liquidate.
