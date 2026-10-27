@@ -1,0 +1,27 @@
+release.json
+  s_a9623dbd9fda04::t_22aff2f8f23d0d 1-42
+AGENTS.md
+  s_a9623dbd9fda04::t_395c0ab08e3dc1 1-23
+tools/check_release.py
+  s_a9623dbd9fda04::t_4a6ffe58be0bbc 1-16
+skills/catalog/SKILL.md
+  s_a9623dbd9fda04::t_7682334106ad18 3,8-11,13,16,18-21,24,26-59,63-66
+README.md
+  s_a9623dbd9fda04::t_c62ce951722a6f 7,12,20,36-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1bbdc599f989e61e03f1d22321a581936421f5e6",
+  "prompts": {},
+  "sessions": {
+    "s_a9623dbd9fda04": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a17bd0-936e-7b11-9673-6e1d09b81a86",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Nikolay Kolev <nikolay@users.noreply.github.com>"
+    }
+  }
+}
