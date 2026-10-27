@@ -9,7 +9,7 @@ The catalog skill searches published domains by project description or keywords 
 Install the versioned release with the skills CLI:
 
 ```bash
-npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.1.0 --skill catalog
+npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.2.0 --skill catalog
 ```
 
 Choose the agent and workspace where you want to use it. The CLI supports agents including Codex, Claude Code, Cursor, and OpenClaw.
@@ -17,7 +17,7 @@ Choose the agent and workspace where you want to use it. The CLI supports agents
 For OpenClaw, the same skill is also on [ClawHub](https://clawhub.ai/namegarage/skills/catalog):
 
 ```bash
-openclaw skills install @namegarage/catalog --version 1.1.0
+openclaw skills install @namegarage/catalog --version 1.2.0
 ```
 
 Try a prompt:
@@ -45,3 +45,11 @@ not calculate replacement prices, start checkout or reserve a name.
 MCP, SDK and skill versions under one release ID. The root `release.json` records
 this artifact's compatibility and SHA-256. Run `python3 tools/check_release.py`
 before release, plus the central cross-repository check from nikolay/liquidate.
+
+## A2A domain selection
+
+The skill also documents the anonymous [A2A 1.0 concierge](https://namegarage.com/docs/a2a).
+Its `select_domains` skill sends one project brief with typed constraints, receives
+current catalog matches, and falls back to anonymous HTTP or MCP search when
+needed. The service returns direct Messages without a persistent task. It cannot
+buy, reserve or register a name. Constraints in prose require clarification.
