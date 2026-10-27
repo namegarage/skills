@@ -16,7 +16,7 @@ No account, API key, cookie, or SDK installation is required.
 A remote Streamable HTTP MCP client can connect to `https://namegarage.com/api/mcp`:
 
 - `search_domains`: search by project description or keywords, optionally filtered by budget, suffix, length or tier.
-- `get_domain`: look up a complete name. Use any returned published description and potential uses; do not invent withheld or missing copy.
+- `get_domain`: look up a complete name. Use returned `description` and `use_cases`; keep empty or withheld copy empty. Potential uses are suggestions, not verified suitability or trademark rights.
 - `get_purchase_options`: compare the current outright price and published standard zero-down lease-to-own schedules.
 - `suggest_alternatives`: find other published names for a complete reference name. Add a project `query`, whole-USD `max_price`, and `limit` when useful. The reference need not be in our catalog; it is excluded before the result limit.
 
