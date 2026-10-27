@@ -64,3 +64,17 @@ Use only documented public reads. They cannot buy or reserve names, create quote
 start checkout, make offers, send messages, create accounts, sign in, or access the
 private portfolio. Do not call other site API routes. Results never reserve a name;
 follow the returned public page before a purchase decision.
+
+
+## Delegate domain selection with A2A
+
+The anonymous [A2A 1.0 Agent Card](https://namegarage.com/.well-known/agent-card.json)
+advertises `select_domains` at `https://namegarage.com/api/a2a`. Read the
+[A2A request guide](https://namegarage.com/docs/a2a.md) before calling it.
+Use `SendMessage` and `A2A-Version: 1.0`, with one data part containing `query`
+and typed `max_price`, `tld`, `max_length`, `tier` or `limit` (default 5, maximum 10).
+Do not embed constraints in query prose. `clarification_required` means no search ran;
+repeat a corrected full brief. Responses are direct Messages, with no persistent task.
+Use only returned listings, prices, descriptions and potential uses; do not invent
+names, relax filters or infer trademark clearance. This adapter cannot purchase or reserve.
+If A2A is unavailable, use the documented anonymous MCP or HTTP search operation.
