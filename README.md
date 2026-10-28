@@ -53,3 +53,14 @@ Its `select_domains` skill sends one project brief with typed constraints, recei
 current catalog matches, and falls back to anonymous HTTP or MCP search when
 needed. The service returns direct Messages without a persistent task. It cannot
 buy, reserve or register a name. Constraints in prose require clarification.
+
+
+## Reader-experience release coordination
+
+The source release record now tracks `2026-10-28-reader-experience`. Its website
+component adds Google's preferred-source popup and a separately configured free
+newsletter prompt. The public catalog contracts, runtime methods/instructions
+and existing immutable package versions are unchanged. This metadata update
+does not republish a package or rewrite an existing tag. The prior A2A
+candidate's outstanding directory-preview acceptance remains explicit in the
+[central changelog](https://namegarage.com/developers/changelog/).
