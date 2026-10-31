@@ -30,7 +30,7 @@ HTTP clients can use these canonical GET routes:
 
 URL-encode parameter values. `/domains.json` is the full published catalog snapshot;
 use the dynamic operations for current availability and prices.
-For JavaScript or TypeScript, the optional official package is `@namegarage/sdk@0.2.0`.
+For JavaScript or TypeScript, the optional official package is `@namegarage/sdk@0.3.0`.
 It provides `getCatalog()` and `searchDomains()`, plus
 `getDomain()`, `getPurchaseOptions()` and `suggestAlternatives()`.
 Search uses `maxPrice` and `maxLength` in the SDK; wire responses retain the API field names.
@@ -78,3 +78,15 @@ repeat a corrected full brief. Responses are direct Messages, with no persistent
 Use only returned listings, prices, descriptions and potential uses; do not invent
 names, relax filters or infer trademark clearance. This adapter cannot purchase or reserve.
 If A2A is unavailable, use the documented anonymous MCP or HTTP search operation.
+
+
+
+## UCP catalog and buyer handoff
+
+Discover UCP only through `https://namegarage.com/.well-known/ucp`. If unavailable, use the HTTP or MCP catalog above. Protocol revision `2026-08-25` supports `dev.ucp.shopping.catalog.search`, `dev.ucp.shopping.catalog.lookup` and `dev.ucp.shopping.permalink` when advertised. Read the [UCP guide](https://namegarage.com/docs/ucp).
+
+Use the advertised REST shopping endpoint for `/catalog/search`, `/catalog/lookup` and `/catalog/product`. POST reads require `UCP-Agent` with an exact reviewed HTTPS platform profile. They do not authenticate the buyer. Search defaults to 10 results, caps pages at 20, and uses snapshot-bound cursor pagination. Lookup accepts at most 20 IDs. Follow pagination rather than guessing exhaustion; restart if the cursor is invalidated by changed prices or availability.
+
+Only available firm outright purchases are variants. Prices are explicit USD minor units; context and eligibility claims confer no discount or authority. Avoid personal or confidential query context. Check `ucp.status`, messages and `Retry-After`, including on HTTP 200. A missing product means unavailable in this catalog.
+
+Use the returned ACE domain ID and quantity one with the advertised permalink endpoint. The SDK's `getUcpProfile()`, `searchUcpCatalog()`, `lookupUcpCatalog()`, `getUcpProduct()` and local `createPurchaseLink()` helper preserve this boundary. The buyer reviews the selected domain and current website terms and completes checkout on Namegarage. Opening a link grants no purchase authority or reservation. Do not call checkout, order, payment or identity endpoints as catalog operations.
