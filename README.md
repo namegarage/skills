@@ -1,5 +1,7 @@
 # Namegarage skills
 
+Upcoming 1.3.0 source candidate. The versioned registry and directory installation commands below apply after publication. Source checks do not establish scanning, listing or ordinary anonymous installation.
+
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
 ## Catalog
