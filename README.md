@@ -1,5 +1,7 @@
 # Namegarage skills
 
+Upcoming 1.3.0 source candidate. The versioned registry and directory installation commands below apply after publication. Source checks do not establish scanning, listing or ordinary anonymous installation.
+
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
 ## Catalog
@@ -9,7 +11,7 @@ The catalog skill searches published domains by project description or keywords 
 Install the versioned release with the skills CLI:
 
 ```bash
-npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.2.0 --skill catalog
+npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.3.0 --skill catalog
 ```
 
 Choose the agent and workspace where you want to use it. The CLI supports agents including Codex, Claude Code, Cursor, and OpenClaw.
@@ -17,7 +19,7 @@ Choose the agent and workspace where you want to use it. The CLI supports agents
 For OpenClaw, the same skill is also on [ClawHub](https://clawhub.ai/namegarage/skills/catalog):
 
 ```bash
-openclaw skills install @namegarage/catalog --version 1.2.0
+openclaw skills install @namegarage/catalog --version 1.3.0
 ```
 
 Try a prompt:
