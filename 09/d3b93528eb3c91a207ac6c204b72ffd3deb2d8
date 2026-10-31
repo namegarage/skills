@@ -1,0 +1,19 @@
+README.md
+  s_28fba3d37cd081::t_09c480da438fa7 3-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "09d3b93528eb3c91a207ac6c204b72ffd3deb2d8",
+  "prompts": {},
+  "sessions": {
+    "s_28fba3d37cd081": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0bbd2-885a-7f31-aa25-c266b5c17892",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Nikolay Kolev <nikolay@users.noreply.github.com>"
+    }
+  }
+}
