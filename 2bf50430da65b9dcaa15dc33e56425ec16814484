@@ -1,0 +1,23 @@
+README.md
+  s_d106a0126da7fa::t_61cfd033415cb3 12,20,48-55
+release.json
+  s_d106a0126da7fa::t_bf4439961cb591 2,4,7-8,37-41,43-56
+skills/catalog/SKILL.md
+  s_d106a0126da7fa::t_0a5f355816e8f7 67-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2bf50430da65b9dcaa15dc33e56425ec16814484",
+  "prompts": {},
+  "sessions": {
+    "s_d106a0126da7fa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e7c2006c-eef7-406f-ad06-3d24d7be173d",
+        "model": "unknown"
+      },
+      "human_author": "Nikolay Kolev <nikolay@users.noreply.github.com>"
+    }
+  }
+}
