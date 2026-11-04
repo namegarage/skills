@@ -67,3 +67,5 @@ metadata changes, while published archives and tags remain immutable.
 Website deployment and isolated delivery acceptance are verified. The inherited
 skills.sh listing-preview acceptance remains explicit in the
 [central changelog](https://namegarage.com/developers/changelog/).
+
+Catalog browsing uses the deployed snapshot and remains available during transaction-database outages. Use dynamic catalog operations for current prices and availability; a browsing snapshot never authorizes a purchase. Release `2026-11-03-static-browsing` changes the website only and retains the existing package version, exact compatibility pins and skill bytes. The earlier UCP candidate remains pending under its own activation and distribution gates.
