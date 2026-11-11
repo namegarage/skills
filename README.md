@@ -59,8 +59,8 @@ buy, reserve or register a name. Constraints in prose require clarification.
 
 ## UCP release coordination
 
-The source release record tracks `2026-11-10-ucp-catalog`: SDK 0.3.0 and skill
-1.3.0 add UCP catalog and buyer handoff guidance. The deployed UCP catalog
+Release `2026-11-10-ucp-catalog` published SDK 0.3.0 and skill 1.3.0, which add
+UCP catalog and buyer handoff guidance. The deployed UCP catalog
 accepts the configured signed Playground platform. These POST reads need its
 reviewed profile and a fresh ES256 HTTP message signature; the anonymous HTTP,
 MCP and A2A alternatives remain available without platform enrollment.
@@ -70,3 +70,8 @@ outages. Dynamic catalog operations check current prices and availability;
 a browsing snapshot never authorizes a purchase. Earlier candidate metadata
 and acceptance evidence remain in the central changelog. New registry
 verification applies to this version and does not rewrite earlier artifacts.
+
+The source release record tracks the upcoming
+`2026-11-10-agreement-signing-sources` release: site-internal source changes for
+agreement signing. No HTTP, MCP, SDK or skill contract changes; every component
+keeps its version. Skill 1.3.0 and its published bytes remain current.
