@@ -1,6 +1,6 @@
 # Namegarage skills
 
-Upcoming 1.3.0 source candidate. The versioned registry and directory installation commands below apply after publication. Source checks do not establish scanning, listing or ordinary anonymous installation.
+Version 1.3.0 adds signed UCP catalog and buyer handoff guidance.
 
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
@@ -57,15 +57,16 @@ needed. The service returns direct Messages without a persistent task. It cannot
 buy, reserve or register a name. Constraints in prose require clarification.
 
 
-## Newsletter activation release coordination
+## UCP release coordination
 
-The source release record tracks `2026-10-28-blog-newsletter`. Website 1.1.1
-connects consented blog signup to confirmed daily delivery and permanent
-unsubscribe. API 1.2.1 retains the preceding OpenAPI media-type correction;
-MCP, SDK, skill and A2A contracts retain their versions. Source coordination
-metadata changes, while published archives and tags remain immutable.
-Website deployment and isolated delivery acceptance are verified. The inherited
-skills.sh listing-preview acceptance remains explicit in the
-[central changelog](https://namegarage.com/developers/changelog/).
+The source release record tracks `2026-11-10-ucp-catalog`: SDK 0.3.0 and skill
+1.3.0 add UCP catalog and buyer handoff guidance. The deployed UCP catalog
+accepts the configured signed Playground platform. These POST reads need its
+reviewed profile and a fresh ES256 HTTP message signature; the anonymous HTTP,
+MCP and A2A alternatives remain available without platform enrollment.
 
-Catalog browsing uses the deployed snapshot and remains available during transaction-database outages. Use dynamic catalog operations for current prices and availability; a browsing snapshot never authorizes a purchase. Release `2026-11-03-static-browsing` changes the website only and retains the existing package version, exact compatibility pins and skill bytes. The earlier UCP candidate remains pending under its own activation and distribution gates.
+Catalog browsing uses the deployed snapshot during transaction-database
+outages. Dynamic catalog operations check current prices and availability;
+a browsing snapshot never authorizes a purchase. Earlier candidate metadata
+and acceptance evidence remain in the central changelog. New registry
+verification applies to this version and does not rewrite earlier artifacts.
