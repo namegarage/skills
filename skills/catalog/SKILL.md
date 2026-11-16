@@ -30,7 +30,7 @@ HTTP clients can use these canonical GET routes:
 
 URL-encode parameter values. `/domains.json` is the full published catalog snapshot;
 use the dynamic operations for current availability and prices.
-For JavaScript or TypeScript, the optional official package is `@namegarage/sdk@0.3.1`.
+For JavaScript or TypeScript, the optional official package is `@namegarage/sdk@0.3.2`.
 It provides `getCatalog()` and `searchDomains()`, plus
 `getDomain()`, `getPurchaseOptions()` and `suggestAlternatives()`.
 Search uses `maxPrice` and `maxLength` in the SDK; wire responses retain the API field names.
@@ -89,4 +89,4 @@ Use the advertised REST shopping endpoint for `/catalog/search`, `/catalog/looku
 
 Only available firm outright purchases are variants. Prices are explicit USD minor units; context and eligibility claims confer no discount or authority. Avoid personal or confidential query context. Check `ucp.status`, messages and `Retry-After`, including on HTTP 200. A missing product means unavailable in this catalog.
 
-Use the returned ACE domain ID and quantity one with the advertised permalink endpoint. The `@namegarage/sdk@0.3.1` helpers `getUcpProfile()`, `searchUcpCatalog()`, `lookupUcpCatalog()`, `getUcpProduct()` and local `createPurchaseLink()` preserve this boundary. The buyer reviews the selected domain and current website terms and completes checkout on Namegarage. Opening a link grants no purchase authority or reservation. Do not call checkout, order, payment or identity endpoints as catalog operations.
+Use the returned ACE domain ID and quantity one with the advertised permalink endpoint. The `@namegarage/sdk@0.3.2` helpers `getUcpProfile()`, `searchUcpCatalog()`, `lookupUcpCatalog()`, `getUcpProduct()` and local `createPurchaseLink()` preserve this boundary. The buyer reviews the selected domain and current website terms and completes checkout on Namegarage. Opening a link grants no purchase authority or reservation. Do not call checkout, order, payment or identity endpoints as catalog operations.
