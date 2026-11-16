@@ -1,0 +1,23 @@
+README.md
+  s_28fba3d37cd081::t_f9d5831762e408 3,14,22,75-79
+release.json
+  s_28fba3d37cd081::t_bf2e8e3ce06bd6 2,6-7,39-45,47
+skills/catalog/SKILL.md
+  s_28fba3d37cd081::t_71ace774927cc4 33,92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0dac67fa12bec19a33c130bfe9e5fd50a8c9f52b",
+  "prompts": {},
+  "sessions": {
+    "s_28fba3d37cd081": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0bbd2-885a-7f31-aa25-c266b5c17892",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Nikolay Kolev <nikolay@users.noreply.github.com>"
+    }
+  }
+}
