@@ -1,6 +1,6 @@
 # Namegarage skills
 
-Version 1.3.0 adds signed UCP catalog and buyer handoff guidance.
+Version 1.3.1 is an upcoming patch that pins SDK 0.3.1 and updates release metadata.
 
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
@@ -11,7 +11,7 @@ The catalog skill searches published domains by project description or keywords 
 Install the versioned release with the skills CLI:
 
 ```bash
-npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.3.0 --skill catalog
+npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.3.1 --skill catalog
 ```
 
 Choose the agent and workspace where you want to use it. The CLI supports agents including Codex, Claude Code, Cursor, and OpenClaw.
@@ -19,7 +19,7 @@ Choose the agent and workspace where you want to use it. The CLI supports agents
 For OpenClaw, the same skill is also on [ClawHub](https://clawhub.ai/namegarage/skills/catalog):
 
 ```bash
-openclaw skills install @namegarage/catalog --version 1.3.0
+openclaw skills install @namegarage/catalog --version 1.3.1
 ```
 
 Try a prompt:
@@ -72,6 +72,8 @@ and acceptance evidence remain in the central changelog. New registry
 verification applies to this version and does not rewrite earlier artifacts.
 
 The source release record tracks the upcoming
-`2026-11-10-agreement-signing-sources` release: site-internal source changes for
-agreement signing. No HTTP, MCP, SDK or skill contract changes; every component
-keeps its version. Skill 1.3.0 and its published bytes remain current.
+`2026-11-11-bitcoin-direct-payment` release. Skill 1.3.1 updates its SDK pin to
+0.3.1 and coordination metadata, with the same public read-only guidance and
+MIT-0 license. Published 1.3.0 bytes remain immutable. The candidate install
+commands above become available after publication and registry acceptance;
+remaining checks are tracked in the central release record and issue #1449.
