@@ -1,6 +1,6 @@
 # Namegarage skills
 
-Version 1.3.2 is an upcoming package patch for the installed Namegarage service. It uses the distinct release ID `2026-11-17-installed-service-packaging`, pins SDK 0.3.2 and serves the existing UCP adapter 1.0.0 contract.
+Version 1.3.2 is a package patch for the installed Namegarage service. It uses the distinct release ID `2026-11-17-installed-service-packaging`, pins SDK 0.3.2 and serves the existing UCP adapter 1.0.0 contract.
 
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
@@ -71,11 +71,9 @@ a browsing snapshot never authorizes a purchase. Earlier candidate metadata
 and acceptance evidence remain in the central changelog. New registry
 verification applies to this version and does not rewrite earlier artifacts.
 
-The source release record tracks the upcoming
+The source release record tracks the
 `2026-11-17-installed-service-packaging` package release for the installed
 service and its existing UCP adapter 1.0.0 contract. Skill 1.3.2 updates its SDK pin to 0.3.2 and coordination
 metadata, with the same public read-only guidance and MIT-0 license. Published
-1.3.0 and 1.3.1 bytes remain immutable. The candidate install commands above
-become available after publication and registry acceptance; remaining checks,
-including the pending 1.3.1 skills.sh snapshot refresh (vercel-labs/skills#2600),
-are tracked in the central release record.
+1.3.0 and 1.3.1 bytes remain immutable. Current publication status and remaining checks are tracked
+in the central release record and the developer changelog.
