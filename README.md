@@ -1,6 +1,6 @@
 # Namegarage skills
 
-Version 1.3.2 is an upcoming patch that pins SDK 0.3.2 and updates release metadata.
+Version 1.3.2 is a package patch for the installed Namegarage service. It uses the distinct release ID `2026-11-17-installed-service-packaging`, pins SDK 0.3.2 and serves the existing UCP adapter 1.0.0 contract.
 
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
@@ -46,7 +46,7 @@ not calculate replacement prices, start checkout or reserve a name.
 [Developer changelog](https://namegarage.com/developers/changelog/) records the API,
 MCP, SDK and skill versions under one release ID. The root `release.json` records
 this artifact's compatibility and SHA-256. Run `python3 tools/check_release.py`
-before release, plus the central cross-repository check from nikolay/liquidate.
+before release, plus the central cross-repository coordination check.
 
 ## A2A domain selection
 
@@ -71,11 +71,9 @@ a browsing snapshot never authorizes a purchase. Earlier candidate metadata
 and acceptance evidence remain in the central changelog. New registry
 verification applies to this version and does not rewrite earlier artifacts.
 
-The source release record tracks the upcoming
-`2026-11-16-ucp-exact-admission` release (UCP 1.0.1 exact global per-source
-rate enforcement). Skill 1.3.2 updates its SDK pin to 0.3.2 and coordination
+The source release record tracks the
+`2026-11-17-installed-service-packaging` package release for the installed
+service and its existing UCP adapter 1.0.0 contract. Skill 1.3.2 updates its SDK pin to 0.3.2 and coordination
 metadata, with the same public read-only guidance and MIT-0 license. Published
-1.3.0 and 1.3.1 bytes remain immutable. The candidate install commands above
-become available after publication and registry acceptance; remaining checks,
-including the pending 1.3.1 skills.sh snapshot refresh (vercel-labs/skills#2600),
-are tracked in the central release record.
+1.3.0 and 1.3.1 bytes remain immutable. Current publication status and remaining checks are tracked
+in the central release record and the developer changelog.
