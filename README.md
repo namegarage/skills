@@ -1,6 +1,8 @@
 # Namegarage skills
 
-Version 1.3.2 is a package patch for the installed Namegarage service. It uses the distinct release ID `2026-11-17-installed-service-packaging`, pins SDK 0.3.2 and serves the existing UCP adapter 1.0.0 contract.
+Version 1.3.2 is the published catalog skill. It belongs to release `2026-11-17-installed-service-packaging`, pins SDK 0.3.2 and serves the installed UCP adapter 1.0.0 contract.
+
+Version 1.3.3 is an upcoming source candidate under release `2026-11-16-ucp-exact-admission`. It changes only the two SDK pins to 0.3.3 and records reserved UCP adapter 1.0.1. It is not published; keep installing 1.3.2 until the [developer changelog](https://namegarage.com/developers/changelog/) shows that release as published.
 
 Public agent skills for finding domains in the [Namegarage catalog](https://namegarage.com/).
 
@@ -14,6 +16,8 @@ Install the versioned release with the skills CLI:
 npx skills@1.7.4 add https://github.com/namegarage/skills/tree/v1.3.2 --skill catalog
 ```
 
+After the changelog shows release `2026-11-16-ucp-exact-admission` as published, use `tree/v1.3.3` in the same command.
+
 Choose the agent and workspace where you want to use it. The CLI supports agents including Codex, Claude Code, Cursor, and OpenClaw.
 
 For OpenClaw, the same skill is also on [ClawHub](https://clawhub.ai/namegarage/skills/catalog):
@@ -21,6 +25,8 @@ For OpenClaw, the same skill is also on [ClawHub](https://clawhub.ai/namegarage/
 ```bash
 openclaw skills install @namegarage/catalog --version 1.3.2
 ```
+
+Use `--version 1.3.3` only after the changelog shows that release as published.
 
 Try a prompt:
 
@@ -71,9 +77,12 @@ a browsing snapshot never authorizes a purchase. Earlier candidate metadata
 and acceptance evidence remain in the central changelog. New registry
 verification applies to this version and does not rewrite earlier artifacts.
 
-The source release record tracks the
-`2026-11-17-installed-service-packaging` package release for the installed
-service and its existing UCP adapter 1.0.0 contract. Skill 1.3.2 updates its SDK pin to 0.3.2 and coordination
-metadata, with the same public read-only guidance and MIT-0 license. Published
-1.3.0 and 1.3.1 bytes remain immutable. Current publication status and remaining checks are tracked
-in the central release record and the developer changelog.
+Published release `2026-11-17-installed-service-packaging` covers skill 1.3.2,
+SDK 0.3.2 and the installed UCP adapter 1.0.0 contract. The source release
+record now tracks the upcoming `2026-11-16-ucp-exact-admission` release, which
+reserves UCP adapter 1.0.1. Skill 1.3.3 updates its two SDK pins to 0.3.3 and
+its coordination metadata, with the same public read-only guidance and MIT-0
+license. It has not been tagged, published or verified on ClawHub or skills.sh.
+Published 1.3.0, 1.3.1 and 1.3.2 bytes remain immutable. Current publication
+status and remaining checks are tracked in the central release record and the
+developer changelog.
