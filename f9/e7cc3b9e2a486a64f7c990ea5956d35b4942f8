@@ -1,0 +1,36 @@
+README.md
+  s_1273cf85c7c779::t_ce7f373a4fecf8 3-5
+  s_1273cf85c7c779::t_ad65ac5bf9e0c3 19-20
+  s_1273cf85c7c779::t_66c5296105c094 29-30
+  s_1273cf85c7c779::t_5ea2d2f84f97c5 80-88
+skills/catalog/SKILL.md
+  s_1273cf85c7c779::t_37b99ad15d0fd9 33
+  s_1273cf85c7c779::t_c52340adbf531f 92
+release.json
+  s_1273cf85c7c779::t_248a5cc46dcdd3 2,6-7,10,39-42,44-45
+  s_28fba3d37cd081::t_03f6e5ce6b9e29 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f9e7cc3b9e2a486a64f7c990ea5956d35b4942f8",
+  "prompts": {},
+  "sessions": {
+    "s_1273cf85c7c779": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "155ddd91-e511-4642-bbe3-0cee457f035d",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Nikolay Kolev <nikolay@users.noreply.github.com>"
+    },
+    "s_28fba3d37cd081": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0bbd2-885a-7f31-aa25-c266b5c17892",
+        "model": "gpt-6.2-astra"
+      },
+      "human_author": "Nikolay Kolev <nikolay@users.noreply.github.com>"
+    }
+  }
+}
